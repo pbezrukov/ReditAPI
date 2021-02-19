@@ -1,0 +1,10 @@
+*.py[cod]
+
+.idea/*
+.python-version
+
+.vscode/*
+.history
+*.code-workspace
+
+venv/*
