@@ -1,0 +1,16 @@
+version: "3"
+services:
+  db:
+    image: "postgres:12"
+    environment:
+      POSTGRES_PASSWORD: "password"
+      POSTGRES_USER: "user"
+      POSTGRES_DB: "redit_db"
+    volumes:
+      - redit_volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+
+volumes:
+  redit_volume:
