@@ -4,7 +4,7 @@ from .models import Post
 from .serializers import PostSerializer
 
 
-class PostsView(ListCreateAPIView):
+class PostListCreateView(ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     pagination_class = PostsPaginator
