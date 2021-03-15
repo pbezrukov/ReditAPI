@@ -10,6 +10,6 @@ class PostsView(ListCreateAPIView):
     pagination_class = PostsPaginator
 
 
-class OnePostView(RetrieveAPIView):
+class PostDetailView(RetrieveAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
