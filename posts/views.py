@@ -1,5 +1,5 @@
 from rest_framework.generics import ListCreateAPIView, RetrieveAPIView
-from .pagiantor import PostsPaginator
+from .pagination import PostsPaginator
 from .models import Post
 from .serializers import PostSerializer
 
