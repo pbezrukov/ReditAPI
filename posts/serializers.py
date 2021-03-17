@@ -4,7 +4,6 @@ from .models import Post
 
 
 class PostSerializer(serializers.ModelSerializer):
-    counter = serializers.SerializerMethodField()
 
     class Meta:
         model = Post
