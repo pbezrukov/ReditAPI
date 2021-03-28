@@ -42,6 +42,9 @@ CORE_APPS = [
 THIRD_PARTY_APPS = [
     'rest_framework',
 ]
+REST_FRAMEWORD = {
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
+}
 
 APPS = [
     'posts',
