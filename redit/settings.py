@@ -48,7 +48,6 @@ REST_FRAMEWORK = {
 
 APPS = [
     'posts',
-    'users'
 ]
 
 INSTALLED_APPS = CORE_APPS + THIRD_PARTY_APPS + APPS
