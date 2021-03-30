@@ -42,12 +42,13 @@ CORE_APPS = [
 THIRD_PARTY_APPS = [
     'rest_framework',
 ]
-REST_FRAMEWORD = {
+REST_FRAMEWORK = {
     'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
 
 APPS = [
     'posts',
+    'users'
 ]
 
 INSTALLED_APPS = CORE_APPS + THIRD_PARTY_APPS + APPS
