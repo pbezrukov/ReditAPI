@@ -45,6 +45,7 @@ THIRD_PARTY_APPS = [
 
 APPS = [
     'posts',
+    'users',
 ]
 
 INSTALLED_APPS = CORE_APPS + THIRD_PARTY_APPS + APPS
@@ -91,7 +92,7 @@ DATABASES = {
         'NAME': 'redit_db',
         'USER': 'user',
         'PASSWORD': 'password',
-        'HOST': '127.0.0.1',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
