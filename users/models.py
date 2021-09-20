@@ -1,18 +1,12 @@
-from django.conf import settings
 from django.db import models
 from django.core import validators
 from django.contrib.auth.models import AbstractBaseUser, UserManager
-# from django.contrib.auth.models import PermissionsMixin
 
 
 class User(AbstractBaseUser):
 
     username = models.CharField(db_index=True, max_length=255, unique=True)
-    email = models.EmailField(
-        validators=[validators.validate_email],
-        unique=True,
-        blank=False
-        )
+    email = models.EmailField(validators=[validators.validate_email], unique=True, blank=False)
     is_staff = models.BooleanField(default=False)  # a admin user; non super-user
     is_superuser = models.BooleanField(default=False)  # a superuser
     USERNAME_FIELD = 'email'
